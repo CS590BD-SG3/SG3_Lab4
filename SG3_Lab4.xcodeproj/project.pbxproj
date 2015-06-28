@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6AC6F7C41B3E1D06003FAE1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6F7C31B3E1D06003FAE1C /* main.m */; };
 		6AC6F7C71B3E1D06003FAE1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6F7C61B3E1D06003FAE1C /* AppDelegate.m */; };
-		6AC6F7CA1B3E1D06003FAE1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6F7C91B3E1D06003FAE1C /* ViewController.m */; };
+		6AC6F7CA1B3E1D06003FAE1C /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6F7C91B3E1D06003FAE1C /* ViewController.mm */; };
 		6AC6F7CD1B3E1D06003FAE1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC6F7CB1B3E1D06003FAE1C /* Main.storyboard */; };
 		6AC6F7CF1B3E1D06003FAE1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AC6F7CE1B3E1D06003FAE1C /* Images.xcassets */; };
 		6AC6F7D21B3E1D06003FAE1C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC6F7D01B3E1D06003FAE1C /* LaunchScreen.xib */; };
@@ -25,9 +25,6 @@
 		6AC6F7F91B3E1DEF003FAE1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6F7F81B3E1DEF003FAE1C /* UIKit.framework */; };
 		6AC6F7FB1B3E1DF6003FAE1C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6F7FA1B3E1DF6003FAE1C /* Security.framework */; };
 		6AC6F7FD1B3E1DFB003FAE1C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6F7FC1B3E1DFB003FAE1C /* ExternalAccessory.framework */; };
-		6AC6F8001B3E1E0B003FAE1C /* RMCharacter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6F7FE1B3E1E0B003FAE1C /* RMCharacter.framework */; };
-		6AC6F8011B3E1E0B003FAE1C /* RMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6F7FF1B3E1E0B003FAE1C /* RMCore.framework */; };
-		6AC6F8031B3E1E10003FAE1C /* RMCharacter.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6F8021B3E1E10003FAE1C /* RMCharacter.bundle */; };
 		6AC6F8321B3E1F04003FAE1C /* NSDateFormatter+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6F8131B3E1F04003FAE1C /* NSDateFormatter+STTwitter.m */; };
 		6AC6F8331B3E1F04003FAE1C /* NSError+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6F8151B3E1F04003FAE1C /* NSError+STTwitter.m */; };
 		6AC6F8341B3E1F04003FAE1C /* NSString+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6F8171B3E1F04003FAE1C /* NSString+STTwitter.m */; };
@@ -51,12 +48,11 @@
 		6AC6F85A1B3E1F71003FAE1C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6F84F1B3E1F71003FAE1C /* AFURLRequestSerialization.m */; };
 		6AC6F85B1B3E1F71003FAE1C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6F8511B3E1F71003FAE1C /* AFURLResponseSerialization.m */; };
 		6AC6F85C1B3E1F71003FAE1C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6F8531B3E1F71003FAE1C /* AFURLSessionManager.m */; };
-		6AC6F85D1B3E222D003FAE1C /* RMCharacter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6AC6F8021B3E1E10003FAE1C /* RMCharacter.bundle */; };
 		6AC6F85F1B3E29E0003FAE1C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6F85E1B3E29E0003FAE1C /* opencv2.framework */; };
 		6AC6F8611B3E2AD0003FAE1C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6F8601B3E2AD0003FAE1C /* CoreVideo.framework */; };
-		6AC6F8631B3E2C30003FAE1C /* ColorCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC6F8621B3E2C30003FAE1C /* ColorCircleViewController.xib */; };
-		6AC6F8661B3E2C8A003FAE1C /* ColorCircleViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6F8651B3E2C8A003FAE1C /* ColorCircleViewController.mm */; };
-		6AC6F8691B3E2D9D003FAE1C /* AbstractOCVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6F8681B3E2D9D003FAE1C /* AbstractOCVViewController.m */; };
+		CA141C721B40805700D3AC99 /* RMCharacter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6F7FE1B3E1E0B003FAE1C /* RMCharacter.framework */; };
+		CA141C731B40805700D3AC99 /* RMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC6F7FF1B3E1E0B003FAE1C /* RMCore.framework */; };
+		CA141C751B40806C00D3AC99 /* RMCharacter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA141C741B40806C00D3AC99 /* RMCharacter.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +72,7 @@
 		6AC6F7C51B3E1D06003FAE1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6AC6F7C61B3E1D06003FAE1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6AC6F7C81B3E1D06003FAE1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6AC6F7C91B3E1D06003FAE1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6AC6F7C91B3E1D06003FAE1C /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		6AC6F7CC1B3E1D06003FAE1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AC6F7CE1B3E1D06003FAE1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6AC6F7D11B3E1D06003FAE1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -150,11 +146,7 @@
 		6AC6F8531B3E1F71003FAE1C /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		6AC6F85E1B3E29E0003FAE1C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		6AC6F8601B3E2AD0003FAE1C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		6AC6F8621B3E2C30003FAE1C /* ColorCircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorCircleViewController.xib; sourceTree = "<group>"; };
-		6AC6F8641B3E2C8A003FAE1C /* ColorCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorCircleViewController.h; sourceTree = "<group>"; };
-		6AC6F8651B3E2C8A003FAE1C /* ColorCircleViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ColorCircleViewController.mm; sourceTree = "<group>"; };
-		6AC6F8671B3E2D9D003FAE1C /* AbstractOCVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractOCVViewController.h; sourceTree = "<group>"; };
-		6AC6F8681B3E2D9D003FAE1C /* AbstractOCVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractOCVViewController.m; sourceTree = "<group>"; };
+		CA141C741B40806C00D3AC99 /* RMCharacter.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RMCharacter.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +154,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA141C721B40805700D3AC99 /* RMCharacter.framework in Frameworks */,
+				CA141C731B40805700D3AC99 /* RMCore.framework in Frameworks */,
 				6AC6F8611B3E2AD0003FAE1C /* CoreVideo.framework in Frameworks */,
 				6AC6F7FD1B3E1DFB003FAE1C /* ExternalAccessory.framework in Frameworks */,
 				6AC6F7FB1B3E1DF6003FAE1C /* Security.framework in Frameworks */,
@@ -169,9 +163,6 @@
 				6AC6F85F1B3E29E0003FAE1C /* opencv2.framework in Frameworks */,
 				6AC6F7F61B3E1DEA003FAE1C /* CoreFoundation.framework in Frameworks */,
 				6AC6F7F71B3E1DEA003FAE1C /* Foundation.framework in Frameworks */,
-				6AC6F8001B3E1E0B003FAE1C /* RMCharacter.framework in Frameworks */,
-				6AC6F8011B3E1E0B003FAE1C /* RMCore.framework in Frameworks */,
-				6AC6F8031B3E1E10003FAE1C /* RMCharacter.bundle in Frameworks */,
 				6AC6F7F31B3E1DDF003FAE1C /* CoreMotion.framework in Frameworks */,
 				6AC6F7F11B3E1DD8003FAE1C /* CoreMedia.framework in Frameworks */,
 				6AC6F7EF1B3E1DD3003FAE1C /* CoreGraphics.framework in Frameworks */,
@@ -194,6 +185,7 @@
 		6AC6F7B51B3E1D06003FAE1C = {
 			isa = PBXGroup;
 			children = (
+				CA141C741B40806C00D3AC99 /* RMCharacter.bundle */,
 				6AC6F8601B3E2AD0003FAE1C /* CoreVideo.framework */,
 				6AC6F85E1B3E29E0003FAE1C /* opencv2.framework */,
 				6AC6F8021B3E1E10003FAE1C /* RMCharacter.bundle */,
@@ -233,12 +225,7 @@
 				6AC6F7C51B3E1D06003FAE1C /* AppDelegate.h */,
 				6AC6F7C61B3E1D06003FAE1C /* AppDelegate.m */,
 				6AC6F7C81B3E1D06003FAE1C /* ViewController.h */,
-				6AC6F7C91B3E1D06003FAE1C /* ViewController.m */,
-				6AC6F8671B3E2D9D003FAE1C /* AbstractOCVViewController.h */,
-				6AC6F8681B3E2D9D003FAE1C /* AbstractOCVViewController.m */,
-				6AC6F8641B3E2C8A003FAE1C /* ColorCircleViewController.h */,
-				6AC6F8651B3E2C8A003FAE1C /* ColorCircleViewController.mm */,
-				6AC6F8621B3E2C30003FAE1C /* ColorCircleViewController.xib */,
+				6AC6F7C91B3E1D06003FAE1C /* ViewController.mm */,
 				6AC6F7CB1B3E1D06003FAE1C /* Main.storyboard */,
 				6AC6F7CE1B3E1D06003FAE1C /* Images.xcassets */,
 				6AC6F7D01B3E1D06003FAE1C /* LaunchScreen.xib */,
@@ -426,8 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC6F8631B3E2C30003FAE1C /* ColorCircleViewController.xib in Resources */,
-				6AC6F85D1B3E222D003FAE1C /* RMCharacter.bundle in Resources */,
+				CA141C751B40806C00D3AC99 /* RMCharacter.bundle in Resources */,
 				6AC6F7CD1B3E1D06003FAE1C /* Main.storyboard in Resources */,
 				6AC6F7D21B3E1D06003FAE1C /* LaunchScreen.xib in Resources */,
 				6AC6F7CF1B3E1D06003FAE1C /* Images.xcassets in Resources */,
@@ -453,15 +439,13 @@
 				6AC6F8391B3E1F04003FAE1C /* STTwitterOAuth.m in Sources */,
 				6AC6F8361B3E1F04003FAE1C /* STTwitterAPI.m in Sources */,
 				6AC6F8341B3E1F04003FAE1C /* NSString+STTwitter.m in Sources */,
-				6AC6F8661B3E2C8A003FAE1C /* ColorCircleViewController.mm in Sources */,
 				6AC6F83A1B3E1F04003FAE1C /* STTwitterOS.m in Sources */,
 				6AC6F83C1B3E1F04003FAE1C /* STTwitterStreamParser.m in Sources */,
 				6AC6F8561B3E1F71003FAE1C /* AFHTTPSessionManager.m in Sources */,
 				6AC6F83B1B3E1F04003FAE1C /* STTwitterOSRequest.m in Sources */,
-				6AC6F7CA1B3E1D06003FAE1C /* ViewController.m in Sources */,
+				6AC6F7CA1B3E1D06003FAE1C /* ViewController.mm in Sources */,
 				6AC6F8571B3E1F71003FAE1C /* AFNetworkReachabilityManager.m in Sources */,
 				6AC6F85C1B3E1F71003FAE1C /* AFURLSessionManager.m in Sources */,
-				6AC6F8691B3E2D9D003FAE1C /* AbstractOCVViewController.m in Sources */,
 				6AC6F8321B3E1F04003FAE1C /* NSDateFormatter+STTwitter.m in Sources */,
 				6AC6F7C71B3E1D06003FAE1C /* AppDelegate.m in Sources */,
 				6AC6F8591B3E1F71003FAE1C /* AFURLConnectionOperation.m in Sources */,
@@ -606,13 +590,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/jl5x4/Downloads/RomoSDK_v1.0C/frameworks,
 					"$(PROJECT_DIR)",
+					/Users/brandon/Downloads/RomoSDK_v1.0C/frameworks,
 				);
 				INFOPLIST_FILE = SG3_Lab4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -623,13 +608,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/jl5x4/Downloads/RomoSDK_v1.0C/frameworks,
 					"$(PROJECT_DIR)",
+					/Users/brandon/Downloads/RomoSDK_v1.0C/frameworks,
 				);
 				INFOPLIST_FILE = SG3_Lab4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};

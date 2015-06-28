@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <RMCore/RMCore.h>
+#include <RMCore/RMCore.h>
 #import <RMCharacter/RMCharacter.h>
 //
-#include "RMCore/RMCore.h"
+
 #include <ifaddrs.h>
 #include <arpa/inet.h>
 #import <AVFoundation/AVFoundation.h>
@@ -24,6 +24,8 @@
     AVCaptureDevice *_captureDevice;
     
     BOOL _useBackCamera;
+    
+    double _min, _max;
 }
 
 @property (nonatomic, strong) RMCoreRobotRomo3 *Romo3;

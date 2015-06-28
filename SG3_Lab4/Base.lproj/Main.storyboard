@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +14,61 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sGH-Ti-M39">
-                                <rect key="frame" x="-5" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="nbY-wz-Rec">
+                                <rect key="frame" x="0.0" y="58" width="320" height="542"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="542" id="NUx-Lj-Cin"/>
+                                    <constraint firstAttribute="width" constant="320" id="gky-KC-QLi"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTB-KH-Ogg">
+                                <rect key="frame" x="144" y="20" width="32" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Blue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jtc-Mm-xnz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJB-Iz-2gN">
+                                <rect key="frame" x="16" y="20" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AfU-Vh-4hD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6c9-eT-eaT">
+                                <rect key="frame" x="261" y="20" width="43" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedOnGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1li-Lx-nuC"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="nbY-wz-Rec" secondAttribute="bottom" constant="-32" id="EL0-go-Ucl"/>
+                            <constraint firstItem="nbY-wz-Rec" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="F9b-MH-Lpt"/>
+                            <constraint firstItem="nbY-wz-Rec" firstAttribute="leading" secondItem="bJB-Iz-2gN" secondAttribute="leading" constant="-16" id="Lbq-5I-zb2"/>
+                            <constraint firstItem="VTB-KH-Ogg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TEJ-Ku-1IE"/>
+                            <constraint firstItem="nbY-wz-Rec" firstAttribute="top" secondItem="VTB-KH-Ogg" secondAttribute="bottom" constant="8" symbolic="YES" id="cl0-JT-6Y9"/>
+                            <constraint firstItem="nbY-wz-Rec" firstAttribute="top" secondItem="bJB-Iz-2gN" secondAttribute="bottom" constant="8" symbolic="YES" id="dki-S9-OWb"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="_imageView" destination="nbY-wz-Rec" id="foj-6o-7nF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
